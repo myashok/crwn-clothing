@@ -1,9 +1,11 @@
-import React from 'react';
-import { ReactComponent as Logo } from '../../assets/crown.svg';
-import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
 import './header.component.scss';
+
+import { Link } from 'react-router-dom';
+import { ReactComponent as Logo } from '../../assets/crown.svg';
+import React from 'react';
 import { auth } from '../../firebase/firebase.util'
+import { connect } from 'react-redux';
+
 const Header = ({ currentUser }) => (
     <div className="header">
         <Link className="logo-container" to="/">
