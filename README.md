@@ -1,2 +1,2 @@
 # crwn-clothing
-Check out this si
+Check out this site [clothing site](https://clothing-site.netlify.app/)
