@@ -20,7 +20,7 @@ const CheckoutItem = ({ cartItem, clearItemFromCart, removeItemFromCart, addItem
                     &#10095;
             </div>
             </span>
-            <span className='price'>{price} &#10005; {quantity} = {price*quantity}</span>
+            <span className='price'>{price} &#10005; {quantity} = {price * quantity}</span>
             <div className='remove-button' onClick={() => clearItemFromCart(cartItem)}>&#10005;</div>
         </div>
     )

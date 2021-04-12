@@ -15,12 +15,12 @@ class SignIn extends React.Component {
         };
     }
 
-    handleSubmit = async event =>  {
+    handleSubmit = async event => {
         event.preventDefault();
-        const {email, password} = this.state;
+        const { email, password } = this.state;
         try {
-           await auth.signInWithEmailAndPassword(email, password);
-        } catch(error) {
+            await auth.signInWithEmailAndPassword(email, password);
+        } catch (error) {
             console.log(error);
         }
         this.setState({ email: '', password: '' });
@@ -32,7 +32,7 @@ class SignIn extends React.Component {
     };
 
     render() {
-        const {email, password} = this.state;
+        const { email, password } = this.state;
         return (
             <div className='sign-in'>
                 <h2>I already have an account</h2>
@@ -59,7 +59,7 @@ class SignIn extends React.Component {
                         <CustomButton type='submit'> Sign in </CustomButton>
                         <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
                             Sign in with Google
-                    </CustomButton>
+                        </CustomButton>
                     </div>
                 </form>
             </div>

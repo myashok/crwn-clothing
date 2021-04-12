@@ -9,7 +9,7 @@
   background-color: black;
   color: white;
   text-transform: uppercase;
-  font-family: 'Open Sans Condensed';
+  font-family: "Open Sans Condensed";
   font-weight: bolder;
   border: none;
   cursor: pointer;
@@ -40,6 +40,18 @@
     &:hover {
       background-color: black;
       color: white;
+      border: none;
+    }
+  }
+  &.danger {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+
+    &:hover {
+      background-color: rgb(255, 0, 0);
+      color: white;
+      font-weight: bolder;
       border: none;
     }
   }
