@@ -1,4 +1,4 @@
-import './header.component.scss';
+import styles from './header.component.module.scss';
 
 import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from '../../assets/crown.svg';
@@ -12,26 +12,26 @@ import { selectCurrentUser } from '../../redux/user/user.selectors';
 import { selectCartHidden } from '../../redux/cart/cart-selectors';
 
 const Header = ({ currentUser, hidden }) => (
-    <div className="header">
-        <Link className="logo-container" to="/">
-            <Logo className="logo" />
+    <div className={styles['header']}>
+        <Link className={styles['logo-container']} to='/'>
+            <Logo className={styles['logo']} />
         </Link>
-        <div className="options">
-            <Link className="option" to="/">
+        <div className={styles['options']}>
+            <Link className={styles['option']} to='/'>
                 HOME
             </Link>
-            <Link className="option" to="/shop">
+            <Link className={styles['option']} to='/shop'>
                 SHOP
             </Link>
-            <Link className="option" to="/contact">
+            <Link className={styles['option']} to='/contact'>
                 Contact
             </Link>
             {currentUser ? (
-                <div className='option' onClick={() => auth.signOut()}>
+                <div className={styles['option']} onClick={() => auth.signOut()}>
                     Sign out
                 </div>
             ) :
-                (<Link className="option" to="/signin">
+                (<Link className={styles['option']} to='/signin'>
                     Sign In
                 </Link>
                 )

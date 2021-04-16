@@ -1,4 +1,4 @@
-import './App.css';
+import styles from './App.module.scss';
 
 import { Redirect, Route, Switch } from 'react-router-dom';
 import { auth, createUserProfileDocument } from './firebase/firebase.util';
@@ -39,15 +39,15 @@ class App extends React.Component {
   }
 
   render() {
-    console.log("currentUser " + JSON.stringify(this.props.currentUser));
+    console.log('currentUser ' + JSON.stringify(this.props.currentUser));
     return (
-      <div className="App">
+      <div className={styles['App']}>
         <Header />
         <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/shop" component={ShopPage} />
-          <Route path="/checkout" component={CheckoutPage} />
-          <Route path="/signin" render={() => this.props.currentUser ? <Redirect to='/' /> : <SignInAndSignUpPage />} />
+          <Route exact path='/' component={HomePage} />
+          <Route path='/shop' component={ShopPage} />
+          <Route path='/checkout' component={CheckoutPage} />
+          <Route path='/signin' render={() => this.props.currentUser ? <Redirect to='/' /> : <SignInAndSignUpPage />} />
         </Switch>
       </div>
     );
