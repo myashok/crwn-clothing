@@ -3,7 +3,7 @@
     CROWN CLOTHING IS A ECOMMERCE CLOTHING WEBSITE
 
 ## Live Demo
-   [Live Demo](https://app.netlify.com/sites/clothing-site)
+   [Live Demo](https://clothing-site.netlify.app/)
 ## Local setup
   ### Dependencies 
    * Unordered sub-list. 
