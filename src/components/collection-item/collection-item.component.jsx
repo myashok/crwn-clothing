@@ -2,17 +2,17 @@ import React from 'react';
 import CustomButton from '../custom-button/custom-button.component';
 import { addItemToCart } from '../../redux/cart/cart.actions';
 import { connect } from 'react-redux';
-import styles from './collection-item.styles.module.scss'
-const CollectionItem = ({ item, addItemToCart }) => {
-    const { name, price, imageUrl } = item;
+import './collection-item.styles.scss'
+const CollectionItem = ({ stl, item, addItemToCart }) => {
+    const {name, price, imageUrl } = item;
     return (
-        <div className={styles['collection-item']}>
-            <div className={styles['image']} style={{ backgroundImage: `url(${imageUrl})` }}></div>
-            <div className={styles['collection-footer']}>
-                <span className={styles['name']}>{name}</span>
-                <span className={styles['price']}>{price}</span>
+        <div className={`${stl} ? ${stl}: '' collection-item`}>
+            <div className='image' style={{ backgroundImage: `url(${imageUrl})` }}></div>
+            <div className='collection-footer'>
+                <span className='name'>{name}</span>
+                <span className='price'>{price}</span>
             </div>
-            <CustomButton className={`${styles['custom-button']} inverted custom-button`} onClick={() => addItemToCart(item)}> Add to Cart</CustomButton>
+            <CustomButton className='custom-button inverted' onClick={() => addItemToCart(item)}> Add to Cart</CustomButton>
         </div>
     )
 }
