@@ -14,11 +14,11 @@ const CheckoutItem = ({ cartItem, clearItemFromCart, removeItemFromCart, addItem
             <span className={styles['quantity']}>
                 <div className={styles['arrow']} onClick={() => removeItemFromCart(cartItem)}>
                     &#10094;
-            </div>
+                </div>
                 <span className={styles['value']}>{quantity}</span>
                 <div className={styles['arrow']} onClick={() => addItemToCart(cartItem)}>
                     &#10095;
-            </div>
+                </div>
             </span>
             <span className={styles['price']}>{price} &#10005; {quantity} = {price * quantity}</span>
             <div className={styles['remove-button']} onClick={() => clearItemFromCart(cartItem)}>&#10005;</div>

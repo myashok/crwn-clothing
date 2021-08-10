@@ -17,13 +17,13 @@ const cartDropdown = ({ cartItems, history, dispatch }) => (
                 <span className={styles['empty-message']}>Your cart is empty</span>
             }
         </div>
-            <CustomButton danger onClick={() => {
-                dispatch(clearCart())
-            }} >CLEAR CART</CustomButton>
-            <CustomButton inverted onClick={() => {
-                history.push('/checkout');
-                dispatch(toggleCartHidden())
-            }} >GO TO CHECKOUT</CustomButton>
+        <CustomButton danger onClick={() => {
+            dispatch(clearCart())
+        }} >CLEAR CART</CustomButton>
+        <CustomButton inverted onClick={() => {
+            history.push('/checkout');
+            dispatch(toggleCartHidden())
+        }} >GO TO CHECKOUT</CustomButton>
     </div>
 )
 const mapStateToProps = createStructuredSelector({

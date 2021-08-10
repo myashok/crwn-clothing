@@ -14,8 +14,8 @@ class ShopPage extends React.Component {
     unsubscribeFromSnapshot = null;
 
     componentDidMount() {
-      const {fetchCollectionsStart} = this.props
-      fetchCollectionsStart();
+        const { fetchCollectionsStart } = this.props
+        fetchCollectionsStart();
     }
 
     render() {

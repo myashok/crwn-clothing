@@ -6,7 +6,7 @@ const WithSpinner = WrappedComponent => {
   const Spinner = ({ isLoading, ...otherProps }) => {
     return isLoading ? (
       <div className={styles.overlay}>
-        <div className={styles.container}/>
+        <div className={styles.container} />
       </div>
     ) : (
       <WrappedComponent {...otherProps} />
