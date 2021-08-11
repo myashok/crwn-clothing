@@ -4,7 +4,7 @@
 
 ## Live Demo
 
-[Live Demo](https://clothing-site.netlify.app/)
+[Live Demo](https://shiv-live.herokuapp.com/)
 
 ## Local setup
 
