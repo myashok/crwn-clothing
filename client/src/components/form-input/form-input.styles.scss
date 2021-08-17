@@ -23,7 +23,9 @@ $main-color: black;
     border-radius: 0;
     border-bottom: 1px solid $sub-color;
     margin: 25px 0;
-
+    @media screen and (max-width: 800px) {
+      width: 90vw;
+    }
     &:focus {
       outline: none;
     }
