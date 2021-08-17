@@ -12,7 +12,7 @@ import { selectCartHidden } from '../../redux/cart/cart-selectors';
 import { signOutStart } from '../../redux/user/user.actions';
 
 const Header = ({ currentUser, hidden, signOutStart }) => (
-    <div className={styles['header']}>
+    <div className={styles['header']} >
         <Link className={styles['logo-container']} to='/'>
             <Logo className={styles['logo']} />
         </Link>
