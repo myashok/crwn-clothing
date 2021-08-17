@@ -9,6 +9,9 @@
     height: 60px;
     padding: 10px;
     margin-bottom: 20px;
+    &:active {
+      background-color: white;
+    }
   }
 
   .logo-container {
@@ -19,6 +22,9 @@
     @media screen and (max-width: 800px) {
       width: 50px;
       padding: 0;
+      &:active {
+        background-color: white;
+      }
     }
   }
 
@@ -32,12 +38,21 @@
 
     @media screen and (max-width: 800px) {
       width: 80%;
+      cursor: pointer;
+      &:active {
+        background-color: white;
+      }
     }
     .option {
       padding: 10px 15px;
       text-transform: uppercase;
       @media screen and (max-width: 470px) {
         padding:5px;
+        cursor: pointer;
+        &:active {
+          background-color: dodgerblue;
+          color: white;
+        }
       }
     }
   }
