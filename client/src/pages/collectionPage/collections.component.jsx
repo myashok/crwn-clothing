@@ -8,7 +8,7 @@ const CollectionPage = ({ collection }) => {
     console.log(styles['collection-item']);
     return (
         <div className={styles['collection-page']}>
-            <h2 className={styles['title']}>{title}</h2>
+            <h2 className={styles['title']}>{title.toUpperCase()}</h2>
             <div className={styles['items']}>
                 {items.map(item => (
                     <CollectionItems stl={styles['collection-item']} key={item.id} item={item} />

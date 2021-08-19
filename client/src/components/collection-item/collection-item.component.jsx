@@ -6,7 +6,7 @@ import './collection-item.styles.scss'
 const CollectionItem = ({ stl, item, addItemToCart }) => {
     const { name, price, imageUrl } = item;
     return (
-        <div className={`${stl} ? ${stl}: '' collection-item`}>
+        <div className='collection-item'>
             <div className='image' style={{ backgroundImage: `url(${imageUrl})` }}></div>
             <div className='collection-footer'>
                 <span className='name'>{name}</span>

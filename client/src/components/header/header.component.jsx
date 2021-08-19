@@ -23,9 +23,6 @@ const Header = ({ currentUser, hidden, signOutStart }) => (
             <Link className={styles['option']} to='/shop'>
                 SHOP
             </Link>
-            <Link className={styles['option']} to='/contact'>
-                Contact
-            </Link>
             {currentUser ? (
                 <div className={styles['option']} onClick={signOutStart}>
                     SIGN OUT
