@@ -20,11 +20,12 @@
 - Clone this repo
 - Install above dependencies
 - Browse to root of cloned folder
+- Install node modules dependencies in root and client folder 
 - Type following command
 
 ```zsh
  yarn
- yarn start
+ yarn dev
 ```
 
 ## Contributing
