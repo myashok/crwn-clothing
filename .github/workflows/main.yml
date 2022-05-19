@@ -18,4 +18,4 @@ jobs:
           dry_run: true
           delete_tags: false
           minimum_tags: 5
-          extra_protected_branch_regex: master.*|main|dev|^release.*|.*_p$
+          extra_protected_branch_regex: master.*|main|dev|netifly|.*_p$
