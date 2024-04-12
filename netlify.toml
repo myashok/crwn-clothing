@@ -1,0 +1,4 @@
+[build]
+  command = "yarn build"  # Update this with your build command
+  publish = "build"          # Update this with your build output directory
+  node_version = "16.2.0"    # Specify the Node.js version here
