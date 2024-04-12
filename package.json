@@ -8,12 +8,13 @@
   "scripts": {
     "client": "cd client && yarn start",
     "server": "nodemon server.js",
-    "build": "cd client && npm run build",
+    "build": "yarn install && cd client && yarn build",
     "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
     "start": "node server.js",
     "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "dependencies": {
+    "react-scripts": "^4.0.3",
     "body-parser": "^1.18.3",
     "compression": "^1.7.4",
     "cors": "2.8.5",
